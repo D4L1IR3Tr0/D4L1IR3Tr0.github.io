@@ -9,187 +9,81 @@
 
 </head>
 
-<body>
-
-
-
-  <header class="header">
-
-    <img src="Images/microscope.svg" id="logo" alt="">
-
-
-
-    <H1 id="titre">Le point Scientifique</H1> <!-- le point culture -->
-
-    <div class="recherche">
-      <label for="bar_recherche"></label><input id="bar_recherche" type="text" Placeholder="Recherche" name="recherche">
-      <button id="btn_recherche"> <img src="Images/loupe.svg" alt=""> </button>
-    </div>
-
-    <a id="btn_abonnement" href="Autre/Abonnement.html"> s'inscrire </a>
-
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#">Sante</a></li>
-        <li><a class="menu__item" href="#">Tech</a></li>
-        <li><a class="menu__item" href="#">Nature</a></li>
-        <li><a class="menu__item" href="#">Culture</a></li>
-        <li><a class="menu__item" href="#">Espace</a></li>
-      </ul>
-    </div>
-
-
-
-  </header>
-
-
-
-  <nav Class="bar_nav">
-    <ul class="menu">
-      <li id="Sante"> <a href="Sante/Sante.html"><span>Santé</span></a></li>
-      <li id="Tech"> <a href="Tech/Tech.html"><span>Tech</span></a></li>
-      <li id="Nature"> <a href="Nature/Nature.html"><span>Nature</span></a></li>
-      <li id="Culture"> <a href="Culture/Culture.html"><span>Culture</span></a></li>
-      <li id="Espace"> <a href="Espace/Espace.html"><span>Espace</span></a></li>
-
-    </ul>
-  </nav>
+<body onLoad="alert('Attention ce site utilise du JavaScript');">
+<script type="text/javascript" src = "Autre/script.js"></script>
 
 
 
 
-  <section class="section">
 
 
-    <article id="1" class="Article">
 
-      <a id="open_article1" href="Nature/Article1/Article1.html">
+<header class="header">
+
+  <img src="Images/microscope.svg" id="logo" alt="">
 
 
-        <div class="containerFlex">
-          <img class="img0" src="Images/climat.png" alt="image climat">
 
-          <div class="article_description">
-            <h2>L'adaptation au changement climatique devient elle une urgence absolue ? </h2>
 
-            <h3>14/03/2022</h3>
-            <p>Les impacts de la hausse de la température de la planète sont déjà très visibles sur
-              les écosystèmes et les activités les humaines. S’y adapter devient une urgence absolue,
-             affirment les auteurs du rapport du Giec sur l’adaptation publié ce 28 février 2022
-            </p>
-          </div>
+  <H1 id="titre">Le point Scientifique</H1> <!-- le point culture -->
+
+  <div class="recherche">
+    <label for="bar_recherche"></label><input id="bar_recherche" type="text" Placeholder="Recherche" name="recherche">
+    <button id="btn_recherche"> <img src="../Images/loupe.svg" alt=""> </button>
+  </div>
+
+</header>
+
+
+  <section class="sectionInscription">
+      <div class="Inscription">
+        <h2>Creer un compte</h2>
+
+        <div>
+          <label for="FieldNom">Nom</label><input type="text" id="FieldNom" required placeholder="Nom">
         </div>
+        <div>
+        <label for="FieldPNom">Prenom </label>
+        <input type="text" id="FieldPNom" required placeholder="Prenom">
+      </div>
+      <div>
+        <label for="FieldDateN">date de naissance </label>
+        <input type="text" id="FieldDateN" required placeholder="jj/mm/aaaa">
+      </div>
+    <div>
+        <label for="FieldNomU">Nom d'utilisateur </label>
+        <input type="text" id="FieldNomU" required placeholder="Nom d'utilisateur">
+      </div>
+      <div>
+        <label for="FieldMDP">Mot de passe </label>
+        <input type="password" id="FieldMDP" required placeholder="Mot de passe">
+      </div>
+      <div>
+        <label for="FieldMail">Adresse Mail </label>
+        <input type="text" id="FieldMail" required placeholder="adresse@Exemple.com">
+      </div>
+          <button id="btnIns" onclick="Recuperation();">Creer un compte</button>
 
 
-      </a>
-    </article>
-
-    <article id="2" class="Article">
-
-      <a id="open_article2" href="Espace/Article1/Article1.html">
+      </div>
+  </section>
 
 
-        <div class="containerFlex">
-          <img class="img0" src="Images/planets.jpeg" alt="image climat">
-
-          <div class="article_description">
-            <h2>Ces trois exoplanètes sont en réalité… des étoiles ! </h2>
-
-            <h3>10/03/2022</h3>
-            <p>Elles avaient été identifiées par le télescope spatial Kepler.
-              Trois exoplanètes parmi des milliers d'autres. Mais trois exoplanètes
-               - peut-être même quatre - qui finalement... n'en seraient pas !
-                À en croire des données plus précises fournies par la mission Gaia,
-                il s'agirait plutôt de petites étoiles.</p>
-          </div>
-        </div>
+  <section class="sectionInscription">
+    <div class="Connection">
+      <h2>se connecter</h2>
 
 
-      </a>
-    </article>
-
-    <article id="3" class="Article">
-
-      <a id="open_article3" href="Sante/Article1/Article1.html">
-
-
-        <div class="containerFlex">
-          <img class="img0" src="Images/contagion.webp" alt="image contagion">
-
-          <div class="article_description">
-            <h2>Comment le bonheur résonne dans nos cerveaux ? </h2>
-
-            <h3>13/03/2022</h3>
-            <p>La vie peut parfois décider de changer brusquement de direction.
-               Pour le pire, mais aussi pour le meilleur. Il est bon de ne pas le
-                perdre de vue en ces temps bousculés. Un premier job, un mariage
-                 ou encore la naissance d’un enfant sont autant de moments qui marquent une vie
-                 . Et dont vous aurez peut-être envie de discuter sur la plateforme
-                  de co-idéation EDF Pulse & You. En attendant, Futura s’est demandé
-                   comment ces instants de bonheur résonnent dans nos cerveaux.</p>
-          </div>
-        </div>
-
-
-      </a>
-    </article>
-
-
-    <article id="4" class="Article">
-
-      <a id="open_article4" href="Nature/Article_Model.html">
-
-
-        <div class="containerFlex">
-          <img class="img0" src="Images/russie_internet.jpeg" alt="image climat">
-
-          <div class="article_description">
-            <h2>Cyberattaque contre un satellite : « On a observé une chute brutale
-               de la connectivité à l’instant T où Vladimir Poutine a déclaré la guerre » ! </h2>
-
-            <h3>6/03/2022</h3>
-            <p>Alors que l'opérateur ViaSat a été victime d'un piratage de son satellite
-               desservant l'Ukraine, l'entreprise suisse Cysec organise en avril un
-                événement dédié à la cybersécurité de l'espace qui va réunir les grands
-                acteurs institutionnels et privés européens. À cette occasion, aura lieu
-                 pour la première fois une démonstration de hacking d'un satellite en orbite.
-                  Mathieu Bailly, responsable des affaires spatiales de Cysec, revient sur
-                   cet événement Cysat et l'actualité brûlante autour de la cyberguerre qui
-                    se joue à travers le conflit en Ukraine.</p>
-          </div>
-        </div>
-
-
-      </a>
-    </article>
-
-
-    <article id="5" class="Article">
-
-      <a id="open_article" href="Nature/Article_Model.html">
-
-
-        <div class="containerFlex">
-          <img class="img0" src="Images/Numerique.png" alt="image climat">
-
-          <div class="article_description">
-            <h2>Les métiers cachés de l’art du numérique </h2>
-
-            <h3>14/03/2022</h3>
-            <p>Le numérique a changé notre façon de travailler, y compris dans des
-              métiers artistiques. Dans le cadre du festival Anima, voici une série d’interviews
-              d’artistes œuvrant au studio d’animation belge Waooh!.</p>
-          </div>
-        </div>
-
-
-      </a>
-    </article>
+      <div>
+        <label for="FieldMDPCo">Mot de passe </label>
+        <input type="password" id="FieldMDPCo" required placeholder="Mot de passe">
+      </div>
+      <div>
+        <label for="FieldMailCo">Adresse Mail </label>
+        <input type="text" id="FieldMailCo" required placeholder="adresse@Exemple.com">
+      </div>
+      <button id="btn" onclick="Connection();">Se connecter</button>
+      </div>
 
 
   </section>
@@ -203,12 +97,19 @@
 
       <div id="contacts">
 
-        <a id="facebook" href="https://www.facebook.com"> <img src="Images/fb.svg" alt="facebook"> </a>
-        <a id="instagram" href="https://www.instagram.com"> <img src="Images/insta.svg" alt="instagram"> </a>
-        <a id="twiter" href="https://www.twiter.com"> <img src="Images/twitter.svg" alt="Twitter"> </a>
+        <a id="facebook" href="https://www.facebook.com"> <img src="../Images/fb.svg" alt="facebook"> </a>
+        <a id="instagram" href="https://www.instagram.com"> <img src="../Images/insta.svg" alt="instagram"> </a>
+        <a id="twiter" href="https://www.twiter.com"> <img src="../Images/twitter.svg" alt="Twitter"> </a>
 
       </div>
     </div>
+
+
+
+
+
+
+
 
   </footer>
 

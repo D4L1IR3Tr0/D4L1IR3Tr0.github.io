@@ -330,24 +330,30 @@ body {
   /*Insription*/
 
 .sectionInscription{
-  display: flex;
-  height:550px;
-
+  display:inline-block;
 }
 .Inscription{
-  width: 40%;
-  height: 80%;
-  margin: auto;
-
+  margin: 170px 180px 200px 150px;
   background-color:white;
   display:flex;
   flex-direction: column;
 
   justify-content:space-between;
 }
+.Connection{
+  margin-right: 150px;
+
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:space-between;
+
+}
 .Inscription h2{
   font-family: 'Cookie', cursive;
   margin-top:10px;
+  margin-bottom:10px;
   text-align: center;
   font-size:40px;
 }
@@ -357,15 +363,48 @@ body {
   font-weight: bold;
   margin-right: 5px;
   margin-left: 50px;
+
 }
 
 .Inscription input{
+  margin-bottom:10px;
+  height:25px;
+  width: 40%;
+  font-size: 15px;
+}
+
+.Inscription button{
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin-left: 40%;
+  margin-bottom:10px;
+}
+
+.Connection h2{
+  margin-bottom:10px;
+  font-family: 'Cookie', cursive;
+  margin-top:10px;
+  text-align: center;
+  font-size:40px;
+}
+
+.Connection label{
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
+.Connection input{
+  margin-bottom:10px;
   height:25px;
   width: 30%;
   font-size: 15px;
 }
 
-.Inscription button{
+.Connection button{
   font-family: 'Yantramanav', sans-serif;
   font-weight: bold;
   width: 100px;
