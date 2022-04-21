@@ -2,7 +2,6 @@
 
     function Recuperation(){
         let Nom, Prenom, dateNaissance, passe, Mail;
-        //const NumU = document.getElementById('FieldNumU').value;
 
         Nom = document.getElementById('FieldNom').value;
         Prenom = document.getElementById('FieldPNom').value;
@@ -13,7 +12,7 @@
         const letters = /^[A-Za-z]+$/;
         const email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         const dateFormat = /^\d{2}\/\d{2}\/\d{4}$/;
-//other validations required code
+
         if(Nom===''||Mail===''||passe===''||dateNaissance===''){
             alert("Les champs vides ne sonts pas autorisés");
         }

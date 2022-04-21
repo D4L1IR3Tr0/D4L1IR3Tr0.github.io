@@ -125,6 +125,7 @@ body {
 }
 
 #btn_abonnement {
+  display: none;
   position: relative;
   left:1000px;
   bottom:100px;
@@ -329,23 +330,32 @@ body {
 
   /*Insription*/
 
-.sectionInscription{
-  display:inline-block;
+.header1{
+  display: flex;
+  justify-content: center;
+
+}
+.logo1{
+  width:100px;
+}
+.main{
+  background-image: url("../Images/micro.jpeg");
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
 }
 .Inscription{
+  display:inline-block;
   margin: 170px 180px 200px 150px;
-  background-color:white;
-  display:flex;
-  flex-direction: column;
+  background-color: #ffffff;
 
   justify-content:space-between;
 }
 .Connection{
   margin-right: 150px;
-
-  background-color:white;
-  display:flex;
-  flex-direction: column;
+  display:inline-block;
+  background-color: #ffffff;
 
   justify-content:space-between;
 
@@ -400,7 +410,7 @@ body {
 .Connection input{
   margin-bottom:10px;
   height:25px;
-  width: 30%;
+  width: 40%;
   font-size: 15px;
 }
 
