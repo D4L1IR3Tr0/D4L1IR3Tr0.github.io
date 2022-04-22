@@ -66,7 +66,6 @@ body {
   /*header*/
 
 .header {
-  height:180px;
   background-image: url("../Images/micro.jpeg");
 }
 
@@ -76,13 +75,6 @@ body {
   width: 150px;
   height: auto;
 
-}
-
-#titre {
-  width:700px;
-  font-size: 50px;
-  font-family: acworth, serif;
-  color: #A9D4FD;
 }
 
 .recherche {
@@ -95,62 +87,6 @@ body {
   border-radius: 100px;
   background-color: #FFFFFF;
 }
-
-#bar_recherche {
-  position: relative;
-  margin-left: 6%;
-  width: 80%;
-  font-size: 20px;
-  border: 0;
-  border-radius: 25px;
-  outline: 0 none #1C6EA4;
-  outline-offset: 0;
-  background-color: transparent;
-  Line-Height: 35px;
-}
-
-#btn_recherche {
-  position: relative;
-  transform: scale(0.07);
-  margin-right: 10px;
-  Height: 40px;
-  Width: 40px;
-  Float: Right;
-  Display: Flex;
-  Justify-Content: Center;
-  Align-Items: Center;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-#btn_abonnement {
-  display: none;
-  position: relative;
-  left:1000px;
-  bottom:100px;
-  margin-top: -80px;
-  margin-right: 80px;
-  cursor: pointer;
-  background: #ff0000;
-  padding: 10px 15px;
-  color: white;
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-  border-radius: 100px;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-shadow: inset 0 0 0 0 #ffffff;
-  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
-}
-
-#btn_abonnement:hover {
-  color: #ff0000;
-  box-shadow: inset 200px 0 0 0 #ffffff;
-}
-
-
   /*Bare de navigation*/
 
 .bar_nav {
@@ -171,7 +107,9 @@ body {
   margin: 0 auto;
   border: 2px double #000000;
 }
-
+#btn_abonnement{
+  display:none;
+}
 .menu li{
   cursor: pointer;
   display: inline;
@@ -204,57 +142,6 @@ body {
 
   /*corps*/
 
-.section {
-  height:100%;
-  background-color: #1B4A75;
-}
-
-.Article {
-  box-sizing: border-box;
-  width: 85%;
-  margin: auto auto 10px;
-  background-color: #eaeef4;
-}
-
-.Article a{
-  color: black;
-  text-decoration: none;
-}
-
-.article_description {
-  width: 55%;
-  margin-top:20px;
-  margin-bottom:20px;
-  margin-right:20px;
-}
-
-
-.containerFlex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img0 {
-  width: 40%;
-  height: auto;
-}
-
-.article_description h2 {
-  font-family: 'Saira Semi Condensed', sans-serif;
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-
-.article_description h3 {
-  font-family: 'Saira Semi Condensed', sans-serif;
-  font-size: 15px;
-  padding-bottom: 20px;
-}
-
-.article_description p {
-  font-family: 'Assistant', sans-serif;
-  font-size: 20px;
-}
 
 
   /*footer*/
@@ -289,45 +176,6 @@ body {
 #contacts a {
   width: 40px;
 }
-
-  /*Article*/
-
-.titreArticle {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
-}
-
-.articleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.ArticleParagraph {
-  margin-top:20px;
-  margin-bottom:20px;
-  font-size: 20px;
-  width: 80%;
-}
-
-.Nature_Art1_Img1 {
-  width: 100%;
-  height: 500px;
-}
-
-.Nature_Art1_Img2 {
-  width: 100%;
-  height: 40%;
-}
-
-
   /*Insription*/
 
 .header1{
@@ -336,7 +184,15 @@ body {
 
 }
 .logo1{
+  margin-left: 150px;
   width:100px;
+}
+.titre1{
+  margin-top:25px;
+  width:700px;
+  font-size: 50px;
+  font-family: acworth, serif;
+  color: #A9D4FD;
 }
 .main{
   background-image: url("../Images/micro.jpeg");
@@ -346,6 +202,7 @@ body {
 
 }
 .Inscription{
+  width:450px;
   display:inline-block;
   margin: 170px 180px 200px 150px;
   background-color: #ffffff;
@@ -353,6 +210,7 @@ body {
   justify-content:space-between;
 }
 .Connection{
+  width:450px;
   margin-right: 150px;
   display:inline-block;
   background-color: #ffffff;
@@ -434,22 +292,25 @@ border-radius: 50%;
 @media screen and (max-width:1000px){
 
   .header{
-    height:150px;
+    height:200px;
   }
   #logo{
     display: none;
   }
 
-  #btn_abonnement{
-    display: none;
-  }
   #titre{
-    margin-left:10%;
-    width:500px;
+    text-align: center;
+    font-size:100px;
+    font-family: acworth, serif;
+    color: #A9D4FD;
   }
-  .recherche{
-    width:400px;
-    margin-left:15%;
+
+  #bar_recherche {
+   display:none;
+  }
+
+  #btn_recherche {
+  display:none;
   }
 
   .bar_nav{
@@ -467,6 +328,7 @@ border-radius: 50%;
   }
   .article h2{
     text-align: center;
+    font-size:40px;
   }
 
   .container {
@@ -495,13 +357,12 @@ border-radius: 50%;
     left: 0 !important;
   }
   .menu__btn {
-    margin-top: 70px !important;
-    margin-left: 10px !important;
+    margin-top: 120px !important;
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 26px;
-    height: 26px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     z-index: 1;
   }
@@ -511,7 +372,7 @@ border-radius: 50%;
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
     transition-duration: .25s;
   }
@@ -542,7 +403,7 @@ border-radius: 50%;
     padding: 12px 24px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
@@ -555,21 +416,235 @@ border-radius: 50%;
     position: sticky;
   }
 
+  .titreArticle {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+  }
+
+  .articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ArticleParagraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 80%;
+  }
+
+  .Nature_Art1_Img1 {
+    width: 100%;
+    height: 500px;
+  }
+
+  .Nature_Art1_Img2 {
+    width: 100%;
+    height: 40%;
+  }
+
+  .section {
+    height:100%;
+    background-color: #1B4A75;
+  }
+
+  .Article {
+    box-sizing: border-box;
+    width: 85%;
+    margin: auto auto 10px;
+    background-color: #eaeef4;
+  }
+
+  .Article a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .article_description {
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px;
+  }
+
+
+  .containerFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img0 {
+
+    height: auto;
+  }
+
+  .article_description h2 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+
+  .article_description h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+
+  .article_description p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 40px;
+  }
+
+
 
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1000px) {
+
+  .header {
+    height: 180px;
+  }
 
   #titre {
-    margin:auto;
-    padding-top:20px;
+    margin: auto;
+    padding-top: 20px;
     padding-left: 250px;
+    width: 700px;
+    font-size: 50px;
+    font-family: acworth, serif;
+    color: #A9D4FD;
   }
-  .hamburger-menu{
+
+  #bar_recherche {
+    position: relative;
+    margin-left: 6%;
+    width: 80%;
+    font-size: 20px;
+    border: 0;
+    border-radius: 25px;
+    outline: 0 none #1C6EA4;
+    outline-offset: 0;
+    background-color: transparent;
+    Line-Height: 35px;
+  }
+
+  #btn_recherche {
+    position: relative;
+    transform: scale(0.07);
+    margin-right: 10px;
+    Height: 40px;
+    Width: 40px;
+    Float: Right;
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .hamburger-menu {
     display: none;
   }
 
+  .titreArticle {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
   }
+
+  .articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ArticleParagraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .Nature_Art1_Img1 {
+    width: 100%;
+    height: 500px;
+  }
+
+  .Nature_Art1_Img2 {
+    width: 100%;
+    height: 40%;
+  }
+
+  .section {
+    height:100%;
+    background-color: #1B4A75;
+  }
+
+  .Article {
+    box-sizing: border-box;
+    width: 85%;
+    margin: auto auto 10px;
+    background-color: #eaeef4;
+  }
+
+  .Article a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .article_description {
+    width: 55%;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px;
+  }
+
+
+  .containerFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img0 {
+    width: 40%;
+    height: auto;
+  }
+
+  .article_description h2 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .article_description h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  .article_description p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+  }
+
+}
+
+
+
 
 
 
@@ -580,6 +655,7 @@ border-radius: 50%;
 
 /*
 
+  Si vous etes curieux http://dalidamergi.me/Nhi Ca n'a rien a voir avec le projet mais c'est pour l'anniversaire d'une amie
 
 |              |        |    |                  |                   |        |
 |---.,---.,---.|__/     |--- |---.,---.    ,---.|    ,---.,---.,---.|---     |
