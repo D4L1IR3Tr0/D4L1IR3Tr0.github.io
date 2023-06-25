@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mainPage</title>
+</head>
+<body>
+
+<style>
+
+    #div1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px; /* Ajustez la hauteur selon vos préférences */
+        background: #061021;
+        background: -moz-linear-gradient(top, #277183 0%, #061021 100%, #0c1d3a 100%);
+        background: -webkit-linear-gradient(top, #277183 0%, #061021 100%, #0c1d3a 100%);
+        background: linear-gradient(to bottom, #277183 0%, #061021 100%, #0c1d3a 100%);
+    }
+
+    #div1 h1 {
+        font-family: "Arial Black", Gadget, sans-serif;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-align: center;
+        font-size: 60px;
+        color: #ffffff;
+        color: #FFFFFF;
+        text-shadow: -5px 5px 0px #f36011, -10px 10px 0px #ffb600, -15px 15px 0px #219292;
+          }
+
+    #div2 {
+        width: 100%;
+        height: 80vh; /* Ajustez la hauteur selon vos préférences */
+        background-image: url("arplan2.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin-top: 20px;
+        padding: 0;
+        width: 20%;
+        background-color: #134d5d;
+        float: left;
+
+        -webkit-box-shadow: 5px 5px 14px 9px #000000;
+        box-shadow: 5px 5px 14px 9px #000000;
+        border-radius: 10px;
+    }
+
+    li {
+
+        display: block;
+        padding: 10px;
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    li a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: #ffffff;
+        white-space: nowrap;
+        font-size: calc(10px + 1vw);
+        width: 100%;
+        transition: color 0.3s ease;
+    }
+    .x:hover{
+        color:#f0f0f0;
+        animation: marquee 3s linear infinite;
+    }
+
+    .y:hover{
+        color:#f0f0f0;
+        animation: marquee 5s linear infinite;
+    }
+
+    .z:hover{
+        color:#f0f0f0;
+    }
+
+    li:hover {
+        border-radius: 10px;
+        background-color: #f36011;
+        width: 100%;
+    }
+
+    iframe {
+        width: 75%;
+        height: 90%;
+        border: none;
+        margin: 20px;
+        display: block;
+        float: right;
+
+        border-radius: 30px;
+    }
+
+    .marquee {
+        /* this class creates a marquee effect for the text */
+        white-space: nowrap;
+        overflow: hidden;
+        animation: none;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+<div id="div1">
+
+<h1>Portfolio</h1>
+
+</div>
+
+
+<div id="div2">
+<ul id="menu">
+    <li><a class="x" href="1.pdf" target="content"><span class="marquee">Estimation pseudo aléatoire de Pi</span></a></li>
+    <li><a class="x" href="2.pdf" target="content"><span class="marquee">Simulateur pseudo aléatoire d’une population de lapins</span></a></li>
+    <li><a class="x" href="3.pdf" target="content"><span class="marquee">Simulateur pseudo aléatoire du jeu de la vie</span></a></li>
+    <li><a class="x" href="4.pdf" target="content"><span class="marquee">Cryptographie code de Cesar</span></a></li>
+    <li><a class="z"  href="5.pdf" target="content"><span class="marquee">Jeu de Puissance 4</span></a></li>
+    <li><a class="z" href="6.pdf" target="content"><span class="marquee">Site Web</span></a></li>
+    <li><a class="x" href="7.pdf" target="content"><span class="marquee">Distributeur Automatique de nourriture pour chat</span></a></li>
+    <li><a class="x" href="8.pdf" target="content"><span class="marquee">Véhicule a deux roues motrices</span></a></li>
+    <li><a class="y" href="9.pdf" target="content"><span class="marquee">Etude de la base de donnée de la société fictive AUVER</span></a></li>
+    <li><a class="x" href="10.pdf" target="content"><span class="marquee">Application IOS (transport de Clermont)</span></a></li>
+</ul>
+
+    <iframe id="frame" name="content" src="" scrolling="no"></iframe>
+
+</div>
+
+
+
+</body>
+</html>
